@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.item {
+    border: black 1px solid;
+    height: 75px;
+    width: 75px;
+}
