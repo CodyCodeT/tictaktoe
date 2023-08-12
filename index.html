@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="form">
+        <form action="" method="post">
+            <input id="nameOne" type="text" placeholder="Player 1 Name" required>
+            <input id="nameTwo" type="text" placeholder="Player 2 Name" required>
+            <button type="submit" id="start">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="player">
+        <h2 id="p1">Player 1</h2>
+        <h2 id="p2">Player 2</h2>
+    </div>
     <div class="container">
         <div class="item" id="item-1"></div>
         <div class="item" id="item-2"></div>
@@ -20,7 +34,8 @@
     </div>
     <div class="result">
         <h1 id="result"></h1>
-        <button id="restart">Restart</button>
+        <!-- <button id="start">Start</button> -->
+        <button id="restart">Reset</button>
     <script src="script.js"></script>
 </body>
 </html>
