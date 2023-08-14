@@ -1,3 +1,6 @@
+* {
+    font-family: 'roboto', sans-serif;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -14,13 +17,51 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
     grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
 }
 .item {
-    border: black 1px solid;
     height: 75px;
     width: 75px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+#item-1 {
+    border-bottom: 3px black solid;
+    border-right: 3px black solid;
+}
+#item-2 {
+    border-bottom: 3px black solid;
+}
+#item-3 {
+    border-bottom: 3px black solid;
+    border-left: 3px black solid;
+}
+#item-4 {
+    border-right: 3px black solid;
+}
+#item-6 {
+    border-left: 3px black solid;
+}
+#item-7 {
+    border-top: 3px black solid;
+    border-right: 3px black solid;
+}
+#item-8 {
+    border-top: 3px black solid;
+}
+#item-9 {
+    border-top: 3px black solid;
+    border-left: 3px black solid;
 }
 #form {
     height: 200px;
@@ -38,4 +79,24 @@ form {
     align-items: center;
     justify-items: center;
     width: 100%;
+}
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+button {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    background-color: rgba(255,255,255,1);
+    &:hover {
+        cursor: pointer;
+    }
 }
